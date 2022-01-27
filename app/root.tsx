@@ -33,14 +33,14 @@ export default function App() {
       <body>
         <ul className="nav-menu">
           <li>
-            <NavLink 
-              to="/posts" 
+            <NavLink
+              to="/posts"
               className={({isActive}) => isActive? "current" : ""}>
-                Posts
+                Posts { process.env.HELLO  || 'nope2' }
             </NavLink>
           </li>
           <li>
-              <NavLink 
+              <NavLink
                 to="/admin"
                 className={({isActive}) => isActive? "current" : ""}
                 >
