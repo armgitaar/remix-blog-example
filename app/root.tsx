@@ -36,7 +36,7 @@ export default function App() {
             <NavLink
               to="/posts"
               className={({isActive}) => isActive? "current" : ""}>
-                Posts { process.env.HELLO  || 'nope2' }
+                Posts
             </NavLink>
           </li>
           <li>
